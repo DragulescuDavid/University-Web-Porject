@@ -1,0 +1,232 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+#banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.2)url('images/tog.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+    color: white;
+}
+
+nav {
+    height: 72px;
+    background: #202125;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    font-family: 'Roboto Condensed', sans=serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px 0 0;
+    box-sizing: border-box;
+    z-index: 100%;
+}
+
+nav a {
+    padding: 0 32px;
+    color: #eee;
+    transition: 0.4s;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    text-decoration: none;
+}
+
+#menu-icon {
+    height: 100%;
+    font-size: 28px;
+    padding: 0 4px;
+    color: #eee;
+    display: none;
+    align-items: center;
+}
+
+#menu-icon img {
+    height: 50px;
+    width: 50px;
+}
+
+#slide-out-menu {
+    display: none;
+    background: #2d3436;
+    z-index: 100;
+    position: fixed;
+    transition: 0.4s;
+    margin-top: 72px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#slide-out-menu ul {
+    list-style: none;
+    padding: 0 32px;
+}
+
+#slide-out-menu li {
+    padding: 8px;
+}
+
+#slide-out-menu a {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+@media(max-width:900px) {
+    nav ul {
+        display: none;
+    }
+    #menu-icon {
+        display: flex;
+    }
+    #slide-out-menu {
+        display: block;
+    }
+}
+
+footer {
+    background: #202125;
+    padding: 8px;
+    color: #eee;
+    display: flex;
+}
+
+footer a {
+    color: white;
+}
+
+footer #left-footer {
+    flex: 1;
+    padding-left: 32px;
+    text-align: center;
+}
+
+footer #left-footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+footer #left-footer li {
+    font-size: 48px;
+    padding: 16px;
+    transition: 0.4s;
+}
+
+main {
+    margin: 0;
+    background-color: #FFFFCC;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.section-heading {
+    font-size: 32px;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-right: 3px solid black;
+    transition: all 0.4s;
+    display: inline-block;
+    padding: 4px 48px;
+    background: red;
+    color: black;
+    text-decoration: none;
+}
+
+.section-heading:hover {
+    padding: 4px 64px;
+    background: blue;
+}
+
+.card-image {
+    transition: 0.4s;
+}
+
+.card-description {
+    padding: 0 8px;
+}
+
+.solo-image {
+    transition: 0.4s;
+}
+
+.solo-description {
+    padding: 0 8px;
+}
+
+@media(min-width:720px) {
+    main {
+        width: 100%;
+    }
+    .card {
+        width: 30%;
+    }
+    .card-image img {
+        width: 50%;
+    }
+    .solo {
+        width: 80%;
+    }
+    .solo-image img {
+        width: 75%;
+    }
+}
+
+.btn-readmore {
+    padding: 8px 24px;
+    border: 3px solid black;
+    transition: 0.4s;
+    display: inline-block;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    background: red;
+    color: black;
+}
+
+.btn-morechar {
+    padding: 8px 24px;
+    border: 3px solid black;
+    transition: 0.4s;
+    display: inline-block;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    background: red;
+    color: black;
+}
+
+.btn-readmore:hover,
+.btn-morechar:hover {
+    padding: 4px 48px;
+    background: blue;
+}

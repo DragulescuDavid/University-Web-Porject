@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    background-color: #FFFFCC;
+}
+
+.heading {
+    font-size: 45px;
+    color: #7c795d;
+    font-family: 'Trocchi', serif;
+    border-right: 3px solid black;
+    transition: all 0.4s;
+    display: inline-block;
+    padding: 4px 48px;
+    font-weight: normal;
+    line-height: 48px;
+    background: #ffcc66;
+}
+
+p {
+    color: #4c4a37;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    padding: 0px 8px;
+    margin-left: 48px;
+    margin-right: 48px;
+}
